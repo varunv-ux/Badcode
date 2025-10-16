@@ -36,62 +36,81 @@ export const feedItems = [
     image: 'https://picsum.photos/seed/sony1/750/750',
     reviews: [
       {
-        author: 'Craig J.',
-        source: 'nakednutrition.com',
+        author: 'Leah S.',
+        source: 'bestbuy.com',
         rating: 5,
         timeAgo: '3 days ago',
-        text: "Helping This Senior Citizen to Regain Muscle Loss Due to Ozempic for Diabetes. I'm a senior citizen who has lost a lot of weight using Ozempic for diabetes, but it seems that the loss is mostly Mus..."
+        text: 'Dolby Vision gaming at 120Hz looks unreal on our PS5. The TV switches to game mode instantly and input lag is basically gone.'
       },
       {
-        author: 'Kelly C.',
-        source: 'shop.app',
+        author: 'Carlos M.',
+        source: 'sony.com',
         rating: 4.5,
-        timeAgo: '3 days ago',
-        text: "We bought a one-pound container of chocolate to start, to test the waters and see how good (or bad) it was going to be. I tried it in my coffee at first, which gave it a chocolatey flavor I liked with not much added sweetening. I liked that. Then, I got adventurous and plopped two rounded scoops into my blender with a cup of unsweetened almond milk and a cup of ice. That, my friends, is the magic (even better with a ripe banana tossed in for a slightly sweet shake). The consistency, the thickness achieved with a"
+        timeAgo: '4 days ago',
+        text: 'Acoustic Surface Audio+ makes dialog crystal clear without a soundbar. The only thing I wish it had was another HDMI 2.1 port.'
       },
       {
-        author: 'Michael T.',
+        author: 'Prisha K.',
         source: 'amazon.com',
         rating: 5,
-        timeAgo: '5 days ago',
-        text: "Best protein powder I've ever used! The taste is incredible and it mixes so smoothly. No chalky aftertaste like other brands. I've been using it for 3 months now and have seen great results in my muscle recovery after workouts. Highly recommend!"
+        timeAgo: '1 week ago',
+        text: 'Colors are stunning even with the blinds open in our living room. Google TV setup was painless and synced all of our smart home routines.'
       },
       {
-        author: 'Sarah M.',
-        source: 'nakednutrition.com',
+        author: 'Jon B.',
+        source: 'bestbuy.com',
         rating: 4,
         timeAgo: '1 week ago',
-        text: "Really good quality protein powder. Love that it's plant-based and has clean ingredients. The only downside is that it's a bit pricey compared to other brands, but you definitely get what you pay for in terms of quality."
+        text: 'Mini LED backlighting is crazy bright. Motion smoothing needed a tweak out of the box, but once adjusted it has become our main movie screen.'
       },
       {
-        author: 'David R.',
-        source: 'shop.app',
+        author: 'Alexandra T.',
+        source: 'sony.com',
         rating: 5,
-        timeAgo: '1 week ago',
-        text: "As someone with a sensitive stomach, this has been a game changer. No bloating or digestive issues at all. The vanilla flavor is subtle and not too sweet. Perfect for smoothies and even baking protein pancakes!"
+        timeAgo: '2 weeks ago',
+        text: 'We wall mounted it in the family room and the narrow bezels disappear. Works seamlessly with our Bravia Theatre system over eARC.'
       },
       {
-        author: 'Jennifer L.',
+        author: 'Maxwell R.',
         source: 'amazon.com',
         rating: 4.5,
         timeAgo: '2 weeks ago',
-        text: "My trainer recommended this and I'm so glad she did. It's become a staple in my daily routine. The texture is smooth and it doesn't clump. I use it post-workout and sometimes as a meal replacement when I'm in a rush."
-      },
-      {
-        author: 'Robert K.',
-        source: 'nakednutrition.com',
-        rating: 5,
-        timeAgo: '2 weeks ago',
-        text: "Finally found a protein powder that doesn't upset my stomach! The ingredient list is clean and simple. No artificial sweeteners or fillers. It's worth every penny. Been using it for 6 months and will continue to purchase."
-      },
-      {
-        author: 'Amanda P.',
-        source: 'shop.app',
-        rating: 4,
-        timeAgo: '3 weeks ago',
-        text: "Great product overall. The chocolate flavor tastes natural, not artificial. Mixes well with almond milk. Only giving 4 stars because the price is a bit high, but the quality justifies it. Would recommend to anyone looking for a clean protein source."
+        text: 'Movie nights look like a cinema thanks to the XR Backlight Master Drive. Shipping box was huge, but setup was simple even for two people.'
       }
-    ]
+    ],
+    aiSummary: {
+      insights: [
+        {
+          title: 'Micro RGB makes HDR pop',
+          description: 'Sony\'s Micro RGB pixel design produces deeper greens and reds, so blockbuster films keep their contrast even with the living-room lights on.',
+          source: 'TechRadar'
+        },
+        {
+          title: 'Acoustic Surface keeps voices crisp',
+          description: 'Screen-shaking actuators turn the entire panel into a speaker, anchoring dialog to the action without needing a separate soundbar.',
+          source: 'Digital Trends'
+        }
+      ],
+      reviews: [
+        {
+          title: 'Creator-friendly colour accuracy',
+          description: 'The Bravia 9 calibrated quickly and held reference-grade colour for my HDR edits.',
+          source: 'Sara Dietschy',
+          platform: 'YouTube'
+        },
+        {
+          title: 'Gaming ready out of the box',
+          description: '120Hz Dolby Vision support and automatic game mode make PS5 sessions buttery smooth.',
+          source: 'SpawnPoint',
+          platform: 'Twitch'
+        }
+      ],
+      aiQuestions: [
+        'Does the Bravia 9 support Dolby Atmos passthrough to my receiver?',
+        'How bright does the TV get in a sunlit room compared with OLED models?',
+        'Can I use the TV stand without wall-mounting even though it has rear-firing ports?'
+      ]
+    }
   },
   {
     id: 4,
