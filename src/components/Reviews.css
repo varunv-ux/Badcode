@@ -1,0 +1,277 @@
+.reviews-container {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #e8e8e8;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.reviews-header {
+  padding: 10px 20px 8px;
+  border-bottom: 1px solid #444746;
+}
+
+.reviews-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #e8e8e8;
+  margin: 0;
+}
+
+.reviews-content {
+  padding: 20px;
+}
+
+.reviews-label-container {
+  margin-bottom: 16px;
+}
+
+.reviews-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: #9e9e9e;
+  text-transform: uppercase;
+}
+
+/* Rating Overview */
+.rating-overview {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.rating-bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-number {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9e9e9e;
+  width: 10px;
+}
+
+.rating-bar-container {
+  flex: 1;
+}
+
+.rating-bar-bg {
+  height: 4px;
+  background-color: rgba(48, 49, 52, 0.94);
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fbbc04;
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+.rating-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.rating-value-large {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  color: #9e9e9e;
+  font-weight: 400;
+}
+
+.rating-stars-display {
+  display: flex;
+  gap: 2px;
+}
+
+.rating-stars-display .review-star-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.rating-count-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #9e9e9e;
+  letter-spacing: 0.2px;
+}
+
+/* Pros and Cons */
+.pros-cons-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.pros-text,
+.cons-text {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.pros-label {
+  font-weight: 500;
+  color: #34a853;
+}
+
+.pros-text {
+  color: #e8e8e8;
+}
+
+.cons-label {
+  font-weight: 500;
+  color: #f2b8b5;
+}
+
+.cons-text {
+  color: #e8e8e8;
+}
+
+/* Divider */
+.reviews-divider {
+  height: 1px;
+  background-color: #444746;
+  margin: 24px 0;
+}
+
+/* Reviews List */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.review-author {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e8e8e8;
+  margin: 0;
+}
+
+.review-source {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9e9e9e;
+  margin: 0;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.review-star-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.review-star-icon.empty-star {
+  opacity: 0.3;
+}
+
+.review-star-icon.half-star {
+  opacity: 0.6;
+}
+
+.review-time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9e9e9e;
+}
+
+.review-snippet {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.review-text {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #e8e8e8;
+  margin: 0 0 4px 0;
+}
+
+.review-more-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #70757a;
+  align-self: flex-start;
+}
+
+.review-more-btn:hover {
+  color: #9e9e9e;
+}
+
+.review-more-icon {
+  font-size: 10px;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+
+.review-divider {
+  height: 1px;
+  background-color: #444746;
+  margin-top: 8px;
+  width: 100%;
+}

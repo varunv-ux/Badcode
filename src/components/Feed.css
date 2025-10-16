@@ -1,0 +1,13 @@
+.feed-container {
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
+  background: #000000;
+}
+
+.feed-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: #000000;
+}

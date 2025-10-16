@@ -1,0 +1,176 @@
+.ad-card {
+  background: #1f1f1f;
+  padding: 2px 0;
+  width: 100%;
+}
+
+.ad-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  height: 50px;
+}
+
+.sponsor-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #28292a;
+  object-fit: cover;
+}
+
+.sponsor-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sponsor-name-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sponsor-name {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #e8e8e8;
+}
+
+.rating-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.rating-trigger:hover {
+  opacity: 0.8;
+}
+
+.rating-separator {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5c5f5e;
+}
+
+.rating-value {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #80868b;
+}
+
+.star-icon {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+.review-count {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #5c5f5e;
+}
+
+.sponsored-label {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #e8e8e8;
+}
+
+.ad-text {
+  padding: 2px 16px 10px;
+}
+
+.ad-description {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ad-media-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.ad-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 0 0 16px;
+  gap: 8px;
+}
+
+.footer-attribution {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+
+.action-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.action-icon:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.action-icon img {
+  display: block;
+}

@@ -1,0 +1,352 @@
+.ai-summary-container {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #e8e8e8;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.ai-hero-section {
+  width: 100%;
+  height: 262px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-content-section {
+  background-color: #1f1f1f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.ai-header {
+  padding: 4px 0 2px;
+  background-color: #1f1f1f;
+}
+
+.ai-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 44px;
+}
+
+.ai-attribution {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-sponsor-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #28292a;
+  object-fit: cover;
+}
+
+.ai-sponsor-name {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e8e8e8;
+}
+
+.ai-actions {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.ai-follow-btn {
+  border: 1px solid #444746;
+  background: transparent;
+  color: #e8e8e8;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.ai-follow-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ai-icon-btn {
+  background: transparent;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.ai-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ai-more-icon {
+  font-size: 18px;
+  color: #e8e8e8;
+}
+
+.ai-header-text {
+  padding: 4px 16px;
+}
+
+.ai-description {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #e8e8e8;
+  margin: 0;
+}
+
+.ai-header-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 16px;
+  height: 44px;
+  justify-content: space-between;
+}
+
+.ai-timestamp {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9e9e9e;
+  letter-spacing: 0.1px;
+}
+
+.ai-footer-actions {
+  display: flex;
+  gap: 0;
+}
+
+.ai-action-btn {
+  background: transparent;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.ai-action-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ai-action-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Insights Section */
+.ai-insights-section,
+.ai-reviews-section {
+  padding: 20px 16px;
+  background-color: #1f1f1f;
+  border-top: 1px solid #000;
+}
+
+.ai-section-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #bfbfbf;
+  margin: 0 0 16px 0;
+}
+
+.ai-insights-list,
+.ai-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ai-insight-item,
+.ai-review-item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.ai-bullet {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #bfbfbf;
+  min-width: 20px;
+  text-align: center;
+}
+
+.ai-insight-content,
+.ai-review-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-insight-text,
+.ai-review-text {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 16px;
+  color: #e8e8e8;
+  margin: 0;
+}
+
+.ai-insight-title,
+.ai-review-title {
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.ai-insight-desc,
+.ai-review-desc {
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.ai-insight-source,
+.ai-review-source {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-source-icon {
+  width: 16px;
+  height: 16px;
+  background-color: #444746;
+  border-radius: 12px;
+}
+
+.ai-source-name {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888;
+}
+
+.ai-feedback-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0;
+  margin-top: 32px;
+}
+
+.ai-feedback-btn {
+  background: transparent;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-feedback-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ai-labs-icon,
+.ai-thumb-icon {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+/* Ask AI Mode Section */
+.ai-ask-section {
+  padding: 20px 16px 8px;
+  background-color: #1f1f1f;
+  border-top: 1px solid #000;
+}
+
+.ai-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ai-question-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 2px solid #000;
+}
+
+.ai-question-icon {
+  font-size: 14px;
+  color: #9e9e9e;
+  transform: rotate(180deg);
+}
+
+.ai-question-text {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #bfbfbf;
+  margin: 0;
+  flex: 1;
+}
+
+.ai-followup-btn {
+  margin: 16px 0;
+  background: transparent;
+  border: 1px solid rgba(49, 134, 255, 0.3);
+  border-radius: 300px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.ai-followup-btn:hover {
+  background: rgba(49, 134, 255, 0.1);
+}
+
+.ai-gemini-icon {
+  font-size: 16px;
+}
+
+.ai-followup-text {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #e8e8e8;
+}
