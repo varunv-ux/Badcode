@@ -1,107 +1,63 @@
 import React, { useState, useEffect } from 'react';
-import { GoogleGenAI, Type } from '@google/genai';
 import './AISummary.css'
 import { HeartIcon, ShareIcon, SaveIcon } from '../assets/icons.js';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
-const responseSchema = {
-  type: Type.OBJECT,
-  properties: {
-    insights: {
-      type: Type.ARRAY,
-      description: 'Two key insights about the product, from the perspective of top tech sites.',
-      items: {
-        type: Type.OBJECT,
-        properties: {
-          title: { type: Type.STRING, description: 'Catchy title for the insight.' },
-          description: { type: Type.STRING, description: 'Detailed description of the insight.' },
-          source: { type: Type.STRING, description: 'Name of the tech site source, e.g., Wirecutter.' },
-        },
-        required: ['title', 'description', 'source']
-      },
+// Mock data for AI summary
+const mockSummaryData = {
+  insights: [
+    {
+      title: "Best-in-class performance",
+      description: "Leading tech reviewers praise this product for its exceptional performance and reliability in real-world testing scenarios",
+      source: "Wirecutter"
     },
-    reviews: {
-      type: Type.ARRAY,
-      description: 'Two summarized reviews from the perspective of tech influencers.',
-      items: {
-        type: Type.OBJECT,
-        properties: {
-          title: { type: Type.STRING, description: 'Catchy title for the review summary.' },
-          description: { type: Type.STRING, description: 'The summarized review text.' },
-          source: { type: Type.STRING, description: 'Name of the influencer, e.g., Marques Brownlee.' },
-          platform: { type: Type.STRING, description: 'Platform of the review, e.g., YouTube.' },
-        },
-        required: ['title', 'description', 'source', 'platform']
-      },
+    {
+      title: "Outstanding value proposition",
+      description: "Experts agree that this product offers premium features at a competitive price point, making it a smart purchase decision",
+      source: "Engadget"
+    }
+  ],
+  reviews: [
+    {
+      title: "Highly Recommended",
+      description: "After extensive testing, this product exceeded expectations across all key metrics. The build quality and user experience are top-notch",
+      source: "Marques Brownlee",
+      platform: "YouTube"
     },
-    aiQuestions: {
-      type: Type.ARRAY,
-      description: 'Three follow-up questions a potential customer might ask.',
-      items: {
-        type: Type.STRING,
-      },
-    },
-  },
-  required: ['insights', 'reviews', 'aiQuestions']
+    {
+      title: "A Game Changer",
+      description: "This product sets a new standard in its category. The innovative features and attention to detail make it stand out from the competition",
+      source: "Linus Tech Tips",
+      platform: "YouTube"
+    }
+  ],
+  aiQuestions: [
+    "How does this compare to similar products in the market?",
+    "What warranty and customer support options are available?",
+    "Are there any known issues or common complaints from users?"
+  ]
 };
-
 
 function AISummary({ item }) {
   const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchSummary = async () => {
-      if (!item) return;
-      try {
-        setLoading(true);
-        setError(null);
+    if (!item) return;
+    
+    // Simulate loading delay
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setSummary(mockSummaryData);
+      setLoading(false);
+    }, 500);
 
-        const prompt = `Generate a concise AI summary for the product: "${item.sponsor} - ${item.description}". 
-        Provide the following:
-        1. Two key insights, presented as if from top tech sites (e.g., Wirecutter, Engadget).
-        2. Two summarized reviews, presented as if from tech influencers (e.g., Marques Brownlee).
-        3. Three follow-up questions a potential customer might ask about the product.
-        
-        Your response must be in the provided JSON format.`;
-
-        const response = await ai.models.generateContent({
-          model: 'gemini-2.5-flash',
-          contents: prompt,
-          config: {
-            responseMimeType: 'application/json',
-            responseSchema: responseSchema,
-          },
-        });
-        
-        const jsonResponse = JSON.parse(response.text);
-        setSummary(jsonResponse);
-
-      } catch (e) {
-        console.error('Error fetching AI summary:', e);
-        setError('Failed to generate AI summary. Please try again later.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchSummary();
+    return () => clearTimeout(timer);
   }, [item]);
 
   if (loading) {
     return (
         <div className="ai-summary-container" style={{ padding: '40px 20px', textAlign: 'center', minHeight: '300px' }}>
-            <p>✨ Generating AI Summary...</p>
-        </div>
-    );
-  }
-  
-  if (error) {
-    return (
-        <div className="ai-summary-container" style={{ padding: '40px 20px', textAlign: 'center', minHeight: '300px' }}>
-            <p style={{color: '#ff8a80'}}>{error}</p>
+            <p>✨ Loading Summary...</p>
         </div>
     );
   }
